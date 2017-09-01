@@ -29,7 +29,9 @@ Vue.directive(name, {
     }
   },
   unbind: function (el) {
-    el.parentNode.removeChild(el);
+    if(el.parentNode) {
+    	el.parentNode.removeChild(el);    
+    }
   }
 })
 
