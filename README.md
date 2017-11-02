@@ -8,9 +8,7 @@ Transfer DOM to another place (eg. `<body>`).
 Useful in some situations such as z-index management, see discussion [here](https://github.com/vuejs/vue/issues/2130).
 
 ## Installation
-```sh
-npm install vue-transfer-dom
-```
+download or point your package.json to a fork of this repo
 
 ## Usage
 
