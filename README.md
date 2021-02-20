@@ -1,4 +1,4 @@
-# vue-transfer-dom
+# vue2-transfer-dom
 
 > requires Vue v2.+
 
@@ -15,6 +15,8 @@ download or point your package.json to a fork of this repo
 ## Usage
 
 ```js
+import { VueTransferDom } from 'vue2-transfer-dom';
+
 Vue.use(VueTransferDom /*, {name: 'transferDom'}*/);
 
 new Vue({
@@ -43,9 +45,17 @@ new Vue({
     // div will be prepended to #bar(document.getElementById)
     template: '<div v-transfer-dom:bar.prepend>foo</div>'
 });
+
+// replace the content of an element
+new Vue({
+    // div will replace the content of #bar(document.getElementById)
+    template: '<div v-transfer-dom:bar.replace>foo</div>'
+})
 ```
 
-**Note:** If appending or prepending to a non-existant target element, an error will be thrown and the element will not be moved.
+**Note:**
+If appending, prepending or replacing a non-existant target element, an error will be logged and the element will not be moved.
+If you use both replace and prepend, the target element will be replaced
 
 ## Credits
 

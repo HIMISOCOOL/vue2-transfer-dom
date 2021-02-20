@@ -38,7 +38,7 @@ import { ErrorLogger } from './logger';
  * // replace the content of an element
  * const component = {
  *   // div will replace the content of #bar(document.getElementById)
- *   template: '<div v-transfer-dom:bar.replace>foo</div>
+ *   template: '<div v-transfer-dom:bar.replace>foo</div>'
  * }
  */
 export const transferDom = (name: string): DirectiveOptions => {

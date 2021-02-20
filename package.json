@@ -13,10 +13,10 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/HIMISOCOOL/vue-transfer-dom.git"
+        "url": "git+https://github.com/HIMISOCOOL/vue2-transfer-dom.git"
     },
-    "author": "Troy Morehouse",
-    "homepage": "https://github.com/HIMISOCOOL/vue-transfer-dom#readme",
+    "author": "Matthew Meehan",
+    "homepage": "https://github.com/HIMISOCOOL/vue2-transfer-dom#readme",
     "contributors": [
         {
             "name": "Troy Morehouse",
@@ -33,9 +33,9 @@
     ],
     "license": "MIT",
     "main": "index.ts",
-    "module": "dist/vue-use-dom-utils.esm.js",
-    "unpkg": "dist/vue-use-dom-utils.prod.js",
-    "jsdelivr": "dist/vue-use-dom-utils.prod.js",
+    "module": "dist/vue2-transfer-dom.esm.js",
+    "unpkg": "dist/vue2-transfer-dom.prod.js",
+    "jsdelivr": "dist/vue2-transfer-dom.prod.js",
     "typings": "dist/index.d.ts",
     "scripts": {
         "clean": "rimraf dist",

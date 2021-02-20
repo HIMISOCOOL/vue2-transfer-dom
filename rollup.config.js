@@ -5,27 +5,27 @@ import { terser } from 'rollup-plugin-terser';
 
 const builds = {
     'cjs-dev': {
-        outFile: 'vue-use-dom-utils.common.js',
+        outFile: 'vue2-transfer-dom.common.js',
         format: 'cjs',
         mode: 'development'
     },
     'cjs-prod': {
-        outFile: 'vue-use-dom-utils.common.prod.js',
+        outFile: 'vue2-transfer-dom.common.prod.js',
         format: 'cjs',
         mode: 'production'
     },
     'umd-dev': {
-        outFile: 'vue-use-dom-utils.js',
+        outFile: 'vue2-transfer-dom.js',
         format: 'umd',
         mode: 'development'
     },
     'umd-prod': {
-        outFile: 'vue-use-dom-utils.prod.js',
+        outFile: 'vue2-transfer-dom.prod.js',
         format: 'umd',
         mode: 'production'
     },
     esm: {
-        outFile: 'vue-use-dom-utils.esm.js',
+        outFile: 'vue2-transfer-dom.esm.js',
         format: 'es',
         mode: 'development'
     }
@@ -53,9 +53,9 @@ function genConfig({ outFile, format, mode }) {
                 vue: 'Vue'
             },
             exports: 'named',
-            name: format === 'umd' ? 'VueUseDomUtils' : undefined
+            name: format === 'umd' ? 'VueTransferDom' : undefined
         },
-        external: ['vue', '@vue/composition-api'],
+        external: ['vue'],
         onwarn,
         plugins: [
             typescript({
