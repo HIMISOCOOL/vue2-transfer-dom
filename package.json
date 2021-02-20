@@ -32,7 +32,7 @@
         }
     ],
     "license": "MIT",
-    "main": "index.ts",
+    "main": "index.js",
     "module": "dist/vue2-transfer-dom.esm.js",
     "unpkg": "dist/vue2-transfer-dom.prod.js",
     "jsdelivr": "dist/vue2-transfer-dom.prod.js",
