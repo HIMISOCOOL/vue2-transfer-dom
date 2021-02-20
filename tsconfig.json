@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "module": "ESNext",
+        "strict": true,
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "lib": ["ES2020", "dom", "dom.iterable", "scripthost"]
+    },
+    "include": [
+        "src/**/*.ts",
+        "tests/**/*.ts",
+    ],
+    "exclude": ["node_modules"]
+}
